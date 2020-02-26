@@ -1,5 +1,8 @@
-function Cat(){
-    console.log('This is a cat');
+function Cat() {
+    this.dead = true;
+}
+Cat.prototype.die = function () {
+    this.dead = false;
 }
 
 module.exports = Cat;
